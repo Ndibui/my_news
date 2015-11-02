@@ -1,0 +1,10 @@
+<ion-view view-title="Feeds">
+  <ion-content>
+    <div class="list card">
+      <a class="item item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="feed in feeds" type="item-text-wrap" href="#/tab/feeds/{{feed.id}}">
+        <img ng-src="{{feed.logo}}">
+        <h2>{{feed.name}}</h2>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

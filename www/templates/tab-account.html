@@ -1,0 +1,7 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle ng-repeat="setting in settings"  ng-model="setting.state" >Enable {{setting.name}}</ion-toggle>
+    </ion-list>
+  </ion-content>
+</ion-view>

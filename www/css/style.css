@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+
+.grayLight {
+	color: #8D8C8C;
+}
+.modal {
+	background-color: rgba(0, 0, 0, 0.61) !important;
+    /*transition: opacity 300ms ease-in-out;*/
+}
+.content{
+	overflow: hidden !important;
+	height: 100px !important;
+}

@@ -1,0 +1,13 @@
+<ion-view view-title="{{name}}" >
+	<ion-content ng-init="getfeed()">
+		<ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()"></ion-refresher>
+		<div class="list">
+			<div ng-repeat="entry in entries track by entry.title" class="item item-thumbnail-left" ng-click="detailView({{$index}})">
+				<img ng-src="{{entry.mediaGroups[0].contents[0].url}}">
+				<h2>{{entry.title}}</h2>
+				<p ng-bind-html="entry.contentSnippet"></p>
+				<h4 class="padding-top grayLight">{{entry.publishedDate}}</h4>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

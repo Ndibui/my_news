@@ -1,0 +1,35 @@
+<ion-modal-view class="transluscent" on-swipe-down="closeView()">
+  <ion-content>
+<div class="list card">
+  <div class="item item-avatar">
+    <img src="{{dv_avatar}}">
+    <h2>{{dv_title}}</h2>
+    <p>{{dv_publishedDate}}</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="{{dv_Img}}">
+    <p class="content" ng-bind-html="dv_content"></p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
+  <div class="item tabs positive tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup"></i>
+      Like
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-chatbox"></i>
+      Comment
+    </a>
+    <a class="tab-item" ng-click="browse('{{dv_link}}'')">
+      <i class="icon ion-earth"></i>
+      View in Browser
+    </a>
+  </div>
+</div>
+  </ion-content>
+</ion-modal-view>
